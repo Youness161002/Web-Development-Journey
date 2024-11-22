@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  background: #CDCDCD;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------- */
+
+header {
+  background: #FFABAB;
+}
+
+h1 {
+  color: #474747;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ----------------------------------------------- */
+
+.cards {
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  padding: 0;
+}
+
+.profilec {
+  margin: 10px;
+  width: 200px;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #000000D1;
+}
+
+.profilec img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.cname {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  animation: textFadeIn 1.5s ease-out;
+}
+
+.jtitle {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.socialli {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.socialli a {
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.socialli a:hover {
+  color: #005b8a;
+}
+
+.jtitle,
+.contact,
+.socialli {
+  opacity: 0;
+  animation: textFadeIn 1.5s ease-out forwards;
+}
+
+.jtitle {
+  animation-delay: 0.5s;
+}
+
+.contact {
+  animation-delay: 1s;
+}
+
+.socialli {
+  animation-delay: 1.5s;
+}
+
+/*  ----------------------- */
+
+@keyframes textFadeIn{
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------------------------- */
